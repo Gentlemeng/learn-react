@@ -3,7 +3,12 @@
 import './index.css';
 // import './exercise/01-更新已渲染元素.js'
 // import './exercise/02-组件'
-import './exercise/03-State&生命周期'
+// import './exercise/03-State&生命周期'
+// import './exercise/04-事件处理'
+// import './exercise/05-条件渲染'
+// import './exercise/06-列表&Key'
+// import './exercise/07-表单'
+import './exercise/08-状态提升'
 
 // // class Square extends React.Component {
 // //     // constructor(props){
