@@ -8,7 +8,9 @@ import './index.css';
 // import './exercise/05-条件渲染'
 // import './exercise/06-列表&Key'
 // import './exercise/07-表单'
-import './exercise/08-状态提升'
+// import './exercise/08-状态提升'
+// import './exercise/09-组合vs继承'
+import './exercise/10-React哲学'
 
 // // class Square extends React.Component {
 // //     // constructor(props){
