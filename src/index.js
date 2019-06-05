@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 // import ReactDOM from 'react-dom';
 import './index.css';
 // import './exercise/01-更新已渲染元素.js'
@@ -10,7 +10,20 @@ import './index.css';
 // import './exercise/07-表单'
 // import './exercise/08-状态提升'
 // import './exercise/09-组合vs继承'
-import './exercise/10-React哲学'
+// import './exercise/10-React哲学'
+import ReactDOM from 'react-dom'
+const root = document.getElementById('root')
+const PRODUCTS = [
+    {category: 'Sporting Goods', price: '$49.99', stocked: true, name: 'Football'},
+    {category: 'Sporting Goods', price: '$9.99', stocked: true, name: 'Baseball'},
+    {category: 'Sporting Goods', price: '$29.99', stocked: false, name: 'Basketball'},
+    {category: 'Electronics', price: '$99.99', stocked: true, name: 'iPod Touch'},
+    {category: 'Electronics', price: '$399.99', stocked: false, name: 'iPhone 5'},
+    {category: 'Electronics', price: '$199.99', stocked: true, name: 'Nexus 7'}
+];
+
+import FilterableProductTable from './exercise/10-React哲学'
+ReactDOM.render(<FilterableProductTable products={PRODUCTS}/>,root)
 
 // // class Square extends React.Component {
 // //     // constructor(props){
