@@ -56,7 +56,7 @@ class TemperatureInput  extends React.Component{
         this.handleChange = this.handleChange.bind(this);
     }
     handleChange(event){
-        this.props.onTemperatureChange(event.target.value);
+        this.props.onTemperatureChange(this.input.value);
     }
     render(){
         const temperature = this.props.temperature;
@@ -64,7 +64,7 @@ class TemperatureInput  extends React.Component{
         return (
             <fieldset>
                 <legend>Enter temperature in {scaleNames[scale]}:</legend>
-                <input type="text" value={temperature} onChange={this.handleChange}/>
+                <input type="text" value={temperature} onChange={this.handleChange} ref={(input)=>{this.input = input}}/>
             </fieldset>
         )
     }
