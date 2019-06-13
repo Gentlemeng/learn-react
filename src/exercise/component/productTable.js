@@ -6,6 +6,24 @@ class ProductTable extends Component{
     //     super(props);
     //     this.state={}
     // }
+    // 生命周期 只有当前后数据不一致时才渲染
+    shouldComponentUpdate(nextProps,nextState){
+        var newProducts = nextProps.products;
+        var beforeProducts = this.props.products
+        var isRender = false;
+
+        if(newProducts.length===beforeProducts.length){
+                for(var i=0;i<newProducts.length;i++){
+                    if(newProducts[i].name!==beforeProducts[i].name){
+                        isRender = true
+                        break;
+                    }
+                }
+        }else{
+            isRender = true
+        }
+        return isRender  // true or false
+    }
     render(){
         const rows = [];
         let lastCategory = '';
